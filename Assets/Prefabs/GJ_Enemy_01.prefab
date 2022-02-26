@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 695779027957405030}
   - component: {fileID: 6791230951680948851}
   - component: {fileID: 7326719310894782800}
+  - component: {fileID: 2060351149454632122}
   m_Layer: 3
   m_Name: GJ_Enemy_01
   m_TagString: Enemy
@@ -116,6 +117,19 @@ MonoBehaviour:
   baselineDamagePerHit: 2
   maxRangeOfDamagePerHit: 0.5
   pushbackForce: 35
+--- !u!114 &2060351149454632122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5620026462959713189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5221e577b0a1a45b33ed9994f31bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 12
 --- !u!1 &5620026463435519022
 GameObject:
   m_ObjectHideFlags: 0
