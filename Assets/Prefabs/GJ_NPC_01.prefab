@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5620026462959713190}
   - component: {fileID: 5620026462959713191}
-  m_Layer: 0
-  m_Name: NPC_01
-  m_TagString: Untagged
+  - component: {fileID: 7843987543157778155}
+  m_Layer: 3
+  m_Name: GJ_NPC_01
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +46,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d601b2fe6784a4eacb3ec25e558585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7843987543157778155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5620026462959713189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efff04b5ae539c40abfdfb65513e26e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCDialog: Change me, change me!
 --- !u!1 &5620026463435519022
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,7 +71,7 @@ GameObject:
   - component: {fileID: 5620026463435519027}
   - component: {fileID: 5620026463435519026}
   - component: {fileID: 5620026463435519025}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NPC_Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}

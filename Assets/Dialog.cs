@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+public class Dialog : MonoBehaviour
 {
 
-    public string Dialog = "Change me, change me!";
+    public string NPCDialog = "Change me, change me!";
 
     // Start is called before the first frame update
     void Start()
