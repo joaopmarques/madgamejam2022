@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePerHit: 0
-  baselineDamagePerHit: 2
-  maxRangeOfDamagePerHit: 0.5
+  baselineDamagePerHit: 12
+  maxRangeOfDamagePerHit: 0.333
   pushbackForce: 35
 --- !u!114 &2060351149454632122
 MonoBehaviour:

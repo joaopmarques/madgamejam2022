@@ -11,7 +11,7 @@ public class RaycastShoot : MonoBehaviour
   public Transform gunEnd;
 
   private Camera fpsCam;
-  private WaitForSeconds shotDuration = new WaitForSeconds(0.07f);
+  private WaitForSeconds shotDuration = new WaitForSeconds(0.15f);
   private AudioSource gunAudio;
   private LineRenderer laserLine;
   private float nextFire;
