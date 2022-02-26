@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 389052848638414226}
   - component: {fileID: 695779027957405030}
   - component: {fileID: 6791230951680948851}
+  - component: {fileID: 6722987470610720809}
+  - component: {fileID: 7326719310894782800}
   m_Layer: 3
   m_Name: GJ_Enemy_01
-  m_TagString: NPC
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +98,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6140f1c373991d54383c86f88e2bb948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movePositionTransform: {fileID: 0}
+  enemyDistance: 200
+--- !u!114 &6722987470610720809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5620026462959713189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac28b735efba094ea83fdea1d4adf9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePerHit: 0
+  baselineDamagePerHit: 1
+  maxRangeOfDamagePerHit: 0.02
+  mayAttack: 0
+--- !u!114 &7326719310894782800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5620026462959713189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33353c69d43ccd14ab51ec31f8de6cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackTimeCooldown: 1
 --- !u!1 &5620026463435519022
 GameObject:
   m_ObjectHideFlags: 0
