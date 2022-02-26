@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5620026462959713190}
   - component: {fileID: 5620026462959713191}
   - component: {fileID: 7843987543157778155}
+  - component: {fileID: 389052848638414226}
   m_Layer: 3
   m_Name: GJ_NPC_01
   m_TagString: NPC
@@ -58,7 +59,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9efff04b5ae539c40abfdfb65513e26e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCDialog: Change me, change me!
+  plotText: Change me, change me!
+--- !u!136 &389052848638414226
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5620026462959713189}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.5186836
+  m_Height: 3.233891
+  m_Direction: 1
+  m_Center: {x: -0.0026618242, y: -0.14585972, z: -0.06881583}
 --- !u!1 &5620026463435519022
 GameObject:
   m_ObjectHideFlags: 0
@@ -85,14 +100,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5620026463435519022}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5620026462959713190}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!33 &5620026463435519027
 MeshFilter:
   m_ObjectHideFlags: 0
