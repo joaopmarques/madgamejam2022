@@ -7,18 +7,29 @@ public class EnemyAttack : MonoBehaviour
   public int damagePerHit;
   public int baselineDamagePerHit = 2;
   public float maxRangeOfDamagePerHit = 0.5f;
-  int currentHealth;
+  public float pushbackForce = 50.0f;
 
   void Update()
   {
     damagePerHit = Mathf.CeilToInt(Random.Range(0f, maxRangeOfDamagePerHit) + baselineDamagePerHit);
   }
 
+  void Attack()
+  {
+    GameObject player = GameObject.Find("Player");
+
+    // Deal the player damage
+    player.GetComponent<PlayerLife>().currentHealth -= damagePerHit;
+
+    // Bump the player back
+    player.GetComponent<Rigidbody>().AddForce(-(player.transform.forward) * pushbackForce, ForceMode.Impulse);
+  }
+
   void OnCollisionEnter(Collision collision)
   {
     if (collision.gameObject.tag == "Player")
     {
-      collision.gameObject.GetComponent<PlayerLife>().currentHealth -= damagePerHit;
+      Attack();
     }
   }
 }

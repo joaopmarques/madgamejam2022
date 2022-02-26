@@ -115,6 +115,7 @@ MonoBehaviour:
   damagePerHit: 0
   baselineDamagePerHit: 2
   maxRangeOfDamagePerHit: 0.5
+  pushbackForce: 35
 --- !u!1 &5620026463435519022
 GameObject:
   m_ObjectHideFlags: 0
