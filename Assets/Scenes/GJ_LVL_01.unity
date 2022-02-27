@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9381749175e9b8b4a8d3249b5694f033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneIndex: 2
+  nextSceneIndex: 3
 --- !u!330 &1346179029
 ParticleSystemForceField:
   m_ObjectHideFlags: 0
