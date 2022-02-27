@@ -18,7 +18,7 @@ MonoBehaviour:
     m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 5
+    m_Value: 7
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.763447, b: 0.0141509175, a: 1}
+    m_Value: {r: 1, g: 0.87484026, b: 0.4764151, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.253
+    m_Value: 0.248
   smoothness:
     m_OverrideState: 1
     m_Value: 0.4
@@ -85,6 +85,8 @@ MonoBehaviour:
   - {fileID: -7893295128165547882}
   - {fileID: -7011558710299706105}
   - {fileID: 223712873088759503}
+  - {fileID: 6550025133502008581}
+  - {fileID: 9006134124590196709}
 --- !u!114 &223712873088759503
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -100,10 +102,10 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {r: 0.14150941, g: 0.062161043, b: 0.015352439, a: 1}
+    m_Value: {r: 0.16981131, g: 0.092493445, b: 0.056870773, a: 1}
   highlights:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.97336686, b: 0.8537736, a: 1}
+    m_Value: {r: 1, g: 0.92677057, b: 0.759434, a: 1}
   balance:
     m_OverrideState: 0
     m_Value: -3.2
@@ -123,3 +125,50 @@ MonoBehaviour:
   mode:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &6550025133502008581
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a1bd58dd7548198609eabd8ae2bb7d, type: 3}
+  m_Name: Pixelation
+  m_EditorClassIdentifier: 
+  active: 1
+  widthPixelation:
+    m_OverrideState: 1
+    m_Value: 10
+  heightPixelation:
+    m_OverrideState: 1
+    m_Value: 10
+  colorPrecision:
+    m_OverrideState: 1
+    m_Value: 16
+--- !u!114 &9006134124590196709
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea62842ddb6960488930897ba9ce398, type: 3}
+  m_Name: Dithering
+  m_EditorClassIdentifier: 
+  active: 1
+  patternIndex:
+    m_OverrideState: 1
+    m_Value: 0
+  ditherThreshold:
+    m_OverrideState: 1
+    m_Value: 512
+  ditherStrength:
+    m_OverrideState: 1
+    m_Value: 1
+  ditherScale:
+    m_OverrideState: 1
+    m_Value: 2
