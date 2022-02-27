@@ -9,17 +9,19 @@ public class RaycastShoot : MonoBehaviour
   public float weaponRange = 50f;
   public float hitForce = 100f;
   public Transform gunEnd;
+  public AudioSource audioSource;
+  public AudioClip shootClip;
+  public float shootVol = 0.5f;
 
   private Camera fpsCam;
   private WaitForSeconds shotDuration = new WaitForSeconds(0.15f);
-  private AudioSource gunAudio;
   private LineRenderer laserLine;
   private float nextFire;
+
 
   void Start()
   {
     laserLine = GetComponent<LineRenderer>();
-    gunAudio = GetComponent<AudioSource>();
     fpsCam = GetComponentInParent<Camera>();
   }
 
@@ -53,7 +55,7 @@ public class RaycastShoot : MonoBehaviour
 
   private IEnumerator ShotEffect()
   {
-    gunAudio.Play();
+    audioSource.PlayOneShot(shootClip, shootVol);
     laserLine.enabled = true;
     yield return shotDuration;
     laserLine.enabled = false;

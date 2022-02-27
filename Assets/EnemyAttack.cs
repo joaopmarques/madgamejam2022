@@ -8,6 +8,9 @@ public class EnemyAttack : MonoBehaviour
   public int baselineDamagePerHit = 2;
   public float maxRangeOfDamagePerHit = 0.5f;
   public float pushbackForce = 50.0f;
+  public AudioSource audioSource;
+  public AudioClip hitClip;
+  public float hitVol = 0.5f;
 
   void Update()
   {
@@ -20,6 +23,7 @@ public class EnemyAttack : MonoBehaviour
 
     // Deal the player damage
     player.GetComponent<PlayerLife>().currentHealth -= damagePerHit;
+    audioSource.PlayOneShot(hitClip, hitVol);
 
     // Bump the player back
     player.GetComponent<Rigidbody>().AddForce(-(player.transform.forward) * pushbackForce, ForceMode.Impulse);
