@@ -11,13 +11,14 @@ public class ShootableBox : MonoBehaviour
   public float deadVol = 0.5f;
 
   //The box's current health point total
-  public int currentHealth = 3;
+  public int currentHealth = 4;
 
   public void Damage(int damageAmount)
   {
     //subtract damage amount when Damage function is called
     currentHealth -= damageAmount;
     audioSource.PlayOneShot(hitClip, hitVol);
+    gameObject.transform.GetChild(0).GetComponent<EnemyAnimator>().Hit();
 
     //Check if health has fallen below zero
     if (currentHealth <= 0)
