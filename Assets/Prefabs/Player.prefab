@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3989596636186206483}
   - component: {fileID: 6109405062965292988}
   - component: {fileID: 6048508138884276896}
+  - component: {fileID: 2097721942321741044}
   m_Layer: 5
   m_Name: Player_Hand
   m_TagString: Untagged
@@ -365,6 +366,19 @@ MonoBehaviour:
   projectileSpeed: 40
   fireRate: 5
   arcRange: 1
+--- !u!114 &2097721942321741044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926073542945765696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573ca0c766fb9f645b74a59450fa246a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3989596636186206483}
 --- !u!1 &4911127399168690431
 GameObject:
   m_ObjectHideFlags: 0
